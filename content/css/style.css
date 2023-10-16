@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgb(9, 58, 121) 10%, rgba(0,212,255,0.14849187935034802) 100%), url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 7rem;
+    padding: 1rem;
+}
+
+header nav .header-logo {
+    display: flex;
+    height: 5rem;
+}
+
+header nav .header-logo img {
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    border: 2px transparent solid;
+    transition: border-bottom-color 0.4s ease-in-out;
+    padding: 0.5rem 1.5rem;
+}
+
+header nav ul li a:hover {
+    border-bottom-color: red;
+}
+
+header .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.header-content-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid aliceblue;
+    margin-top: 1rem;
+}
+
+.header-content-btn:hover {
+    background-color: red;
+    border-color: red;
+    transition: all 0.3s ease-in-out;
+}
